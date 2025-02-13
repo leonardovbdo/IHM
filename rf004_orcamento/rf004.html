@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de Solicitações</title>
+    <link rel="stylesheet" href="rf004.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Atualização de Solicitação</h1>
+
+        <form id="updateForm">
+            <label for="solicitationId">ID da Solicitação:</label>
+            <input type="text" id="solicitationId" name="solicitationId" disabled value="001">
+
+            <label for="name">Nome do Cliente:</label>
+            <input type="text" id="name" name="name" value="João Silva" required>
+
+            <label for="serviceType">Tipo de Serviço:</label>
+            <select id="serviceType" name="serviceType">
+                <option value="eletrico" selected>Serviço Elétrico</option>
+                <option value="pintura">Pintura</option>
+                <option value="hidraulico">Hidráulico</option>
+            </select>
+
+            <label for="date">Data do Serviço:</label>
+            <input type="date" id="date" name="date" value="2025-02-15" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="pendente" selected>Pendente</option>
+                <option value="em_andamento">Em Andamento</option>
+                <option value="concluido">Concluído</option>
+            </select>
+
+            <button type="submit" class="btn-save">Salvar Alterações</button>
+            <button type="reset" class="btn-cancel">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Solicitações</title>
+    <link rel="stylesheet" href="rf003.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Solicitações</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Digite o nome ou ID da solicitação...">
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Tipo de Serviço</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>João Silva</td>
+                    <td>Serviço Elétrico</td>
+                    <td>15/02/2025</td>
+                    <td class="status pending">Pendente</td>
+                    <td>
+                        <button class="btn-view">Visualizar</button>
+                        <button class="btn-cancel">Cancelar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Maria Souza</td>
+                    <td>Pintura</td>
+                    <td>18/02/2025</td>
+                    <td class="status completed">Concluído</td>
+                    <td>
+                        <button class="btn-view">Visualizar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

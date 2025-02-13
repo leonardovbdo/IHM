@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusão de Solicitações</title>
+    <link rel="stylesheet" href="rf005.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exclusão de Solicitação</h1>
+
+        <form id="deleteForm">
+            <label for="solicitationId">ID da Solicitação:</label>
+            <input type="text" id="solicitationId" name="solicitationId" disabled value="001">
+
+            <label for="name">Nome do Cliente:</label>
+            <input type="text" id="name" name="name" disabled value="João Silva">
+
+            <label for="serviceType">Tipo de Serviço:</label>
+            <input type="text" id="serviceType" name="serviceType" disabled value="Serviço Elétrico">
+
+            <label for="date">Data do Serviço:</label>
+            <input type="date" id="date" name="date" disabled value="2025-02-15">
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" disabled value="Pendente">
+
+            <p class="warning">Tem certeza de que deseja excluir esta solicitação? Esta ação não pode ser desfeita.</p>
+
+            <button type="submit" class="btn-delete">Excluir</button>
+            <button type="button" class="btn-cancel" onclick="window.location.href='index.html'">Cancelar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../assets/logo.webp') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* Leve transparência para melhor visibilidade */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: calc(100% - 20px); /* Evita que encoste nas bordas */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+}
+
+input:focus, select:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  display: none; /* Use scripts para exibir em casos de erro */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-confirm {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-cancel {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
