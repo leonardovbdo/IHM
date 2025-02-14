@@ -8,34 +8,44 @@
 </head>
 <body>
   <div class="container">
-    <form class="form-authentication">
+    <form class="form-authentication" id="formCadastro">
       <h1>Cadastro de Usuário</h1>
+
       <div class="form-group">
         <label for="nome">Nome <span class="required">*</span></label>
         <input type="text" id="nome" placeholder="Digite seu nome">
+        <span class="error-msg">Campo obrigatório</span>
       </div>
+
       <div class="form-group">
         <label for="email">E-mail <span class="required">*</span></label>
         <input type="email" id="email" placeholder="Digite seu e-mail">
-        <span class="error-msg">E-mail já cadastrado</span>
+        <span class="error-msg">Campo obrigatório</span>
       </div>
+
       <div class="form-group">
         <label for="senha">Senha <span class="required">*</span></label>
         <input type="password" id="senha" placeholder="Digite sua senha">
-        <span class="error-msg">A senha deve conter 8 caracteres</span>
+        <span class="error-msg">Campo obrigatório</span>
       </div>
+
       <div class="form-group">
         <label for="tipo-usuario">Tipo de Usuário <span class="required">*</span></label>
         <select id="tipo-usuario">
+          <option value="">Selecione...</option>
           <option value="cliente">Cliente</option>
           <option value="prestador">Prestador de Serviço</option>
         </select>
+        <span class="error-msg">Campo obrigatório</span>
       </div>
+
       <div class="buttons">
         <button class="btn-confirm" type="submit">Confirmar</button>
         <button class="btn-cancel" type="button">Cancelar</button>
       </div>
     </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

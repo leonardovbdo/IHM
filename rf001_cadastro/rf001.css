@@ -1,52 +1,64 @@
+/* ------------------- GERAL ------------------- */
 body {
-  font-family: Arial, sans-serif;
-  background: url('../assets/logo.webp') no-repeat center center fixed;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #3b4b56, #53636E);
   background-size: cover;
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
+  color: #2c3e50;
 }
 
+/* ------------------- CONTAINER ------------------- */
 .container {
   max-width: 500px;
   margin: 80px auto;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.9); /* Leve transparência para melhor visibilidade */
-  border: 1px solid #ddd;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* ------------------- TÍTULO ------------------- */
 h1 {
+  text-align: center;
+  color: #1E3C72;
   font-size: 24px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
+/* ------------------- FORMULÁRIO ------------------- */
 .form-group {
   margin-bottom: 15px;
 }
 
 label {
-  font-weight: bold;
+  font-weight: 600;
   display: block;
   margin-bottom: 5px;
+  color: #34495e;
 }
 
+/* ------------------- CAMPOS ------------------- */
 input, select {
-  width: calc(100% - 20px); /* Evita que encoste nas bordas */
+  width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  background: #f7f9f9;
   display: block;
   margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 input:focus, select:focus {
-  border-color: #66afe9;
+  border-color: #1E3C72;
   outline: none;
 }
 
+/* ------------------- VALIDAÇÃO ------------------- */
 .required {
   color: red;
   margin-left: 5px;
@@ -55,33 +67,50 @@ input:focus, select:focus {
 .error-msg {
   color: red;
   font-size: 12px;
-  display: none; /* Use scripts para exibir em casos de erro */
+  display: none;
 }
 
+.error-input {
+  border: 2px solid red !important;
+}
+
+/* ------------------- BOTÕES ------------------- */
 .buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
+/* Botão Confirmar */
 .btn-confirm {
-  background-color: green;
-  color: #fff;
+  background-color: #3498db;
+  color: white;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
+.btn-confirm:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Botão Cancelar */
 .btn-cancel {
-  background-color: red;
-  color: #fff;
+  background-color: #e74c3c;
+  color: white;
   border: none;
   padding: 12px 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-button:hover {
-  opacity: 0.8;
+.btn-cancel:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
 }
