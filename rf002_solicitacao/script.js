@@ -1,5 +1,5 @@
 document.getElementById("serviceRequestForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita envio se houver erro
+    event.preventDefault();
 
     let isValid = true;
     let fields = ["nome", "email", "telefone", "tipo-servico", "descricao", "data"];

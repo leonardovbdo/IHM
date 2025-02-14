@@ -1,4 +1,3 @@
-/* ------------------- GERAL ------------------- */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #3b4b56, #53636E);
@@ -9,7 +8,6 @@ body {
   color: #2c3e50;
 }
 
-/* ------------------- CONTAINER ------------------- */
 .container {
   max-width: 500px;
   margin: 80px auto;
@@ -19,7 +17,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------- TÍTULO ------------------- */
 h1 {
   text-align: center;
   color: #1E3C72;
@@ -27,7 +24,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* ------------------- FORMULÁRIO ------------------- */
 .form-group {
   margin-bottom: 15px;
 }
@@ -39,7 +35,6 @@ label {
   color: #34495e;
 }
 
-/* ------------------- CAMPOS ------------------- */
 input, select {
   width: 100%;
   padding: 12px;
@@ -58,7 +53,6 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* ------------------- VALIDAÇÃO ------------------- */
 .required {
   color: red;
   margin-left: 5px;
@@ -74,14 +68,12 @@ input:focus, select:focus {
   border: 2px solid red !important;
 }
 
-/* ------------------- BOTÕES ------------------- */
 .buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-/* Botão Confirmar */
 .btn-confirm {
   background-color: #3498db;
   color: white;
@@ -98,7 +90,6 @@ input:focus, select:focus {
   transform: scale(1.05);
 }
 
-/* Botão Cancelar */
 .btn-cancel {
   background-color: #e74c3c;
   color: white;
